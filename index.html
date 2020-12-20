@@ -177,6 +177,20 @@
       canvas.addEventListener("mouseup", mouseUp, false);
       canvas.addEventListener("mouseout", mouseUp, false);
       canvas.addEventListener("mousemove", mouseMove, false);
+         
+         /*================= Keyboard events ======================*/
+
+         function check(e) {
+             var code = e.keyCode;
+             switch (code) {
+                 case 87: PHI-=0.05; break;
+                 case 65: THETA-=0.05; break;
+                 case 83: PHI+=0.05; break;
+                 case 68: THETA+=0.05; break;
+             }
+         }
+
+         window.addEventListener('keydown', check, false);
 
       /*=========================rotation================*/
 
