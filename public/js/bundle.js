@@ -46746,7 +46746,7 @@
 			_inherits(Scene, _EventEmitter);
 
 			function Scene() {
-				var domElement = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.getElementById('container');
+				var domElement = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.getElementById('gl_context');
 
 				var _width = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : window.innerWidth;
 
